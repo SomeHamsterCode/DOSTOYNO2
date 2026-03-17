@@ -1,0 +1,96 @@
+import { Exercise } from '../types';
+
+export const exercises: Exercise[] = [
+  {
+    id: 1,
+    type: 'multiple-choice',
+    question: 'How do you say "Hello" in Spanish?',
+    hint: 'Think of a common greeting',
+    choices: [
+      { id: 'a', text: 'Hola', isCorrect: true },
+      { id: 'b', text: 'Adiós', isCorrect: false },
+      { id: 'c', text: 'Gracias', isCorrect: false },
+      { id: 'd', text: 'Por favor', isCorrect: false },
+    ],
+    xpReward: 10,
+  },
+  {
+    id: 2,
+    type: 'matching',
+    question: 'Match the Spanish words with their English translations',
+    matchPairs: [
+      { id: '1', left: 'Gato', right: 'Cat' },
+      { id: '2', left: 'Perro', right: 'Dog' },
+      { id: '3', left: 'Casa', right: 'House' },
+      { id: '4', left: 'Libro', right: 'Book' },
+    ],
+    xpReward: 20,
+  },
+  {
+    id: 3,
+    type: 'translation',
+    question: 'Translate: "I want water"',
+    hint: 'Yo quiero...',
+    choices: [
+      { id: 'a', text: 'Yo quiero agua', isCorrect: true },
+      { id: 'b', text: 'Yo tengo agua', isCorrect: false },
+      { id: 'c', text: 'Yo como agua', isCorrect: false },
+      { id: 'd', text: 'Yo bebo agua', isCorrect: false },
+    ],
+    xpReward: 15,
+  },
+  {
+    id: 4,
+    type: 'fill-blank',
+    question: 'Fill in the blank',
+    blankedSentence: 'Yo ___ un estudiante.',
+    correctAnswer: 'soy',
+    options: ['soy', 'es', 'eres', 'son'],
+    xpReward: 15,
+  },
+  {
+    id: 5,
+    type: 'multiple-choice',
+    question: 'What does "Gracias" mean?',
+    choices: [
+      { id: 'a', text: 'Please', isCorrect: false },
+      { id: 'b', text: 'Sorry', isCorrect: false },
+      { id: 'c', text: 'Thank you', isCorrect: true },
+      { id: 'd', text: 'Goodbye', isCorrect: false },
+    ],
+    xpReward: 10,
+  },
+  {
+    id: 6,
+    type: 'matching',
+    question: 'Match the numbers',
+    matchPairs: [
+      { id: '1', left: 'Uno', right: 'One' },
+      { id: '2', left: 'Dos', right: 'Two' },
+      { id: '3', left: 'Tres', right: 'Three' },
+      { id: '4', left: 'Cinco', right: 'Five' },
+    ],
+    xpReward: 20,
+  },
+  {
+    id: 7,
+    type: 'fill-blank',
+    question: 'Fill in the blank',
+    blankedSentence: 'El gato ___ negro.',
+    correctAnswer: 'es',
+    options: ['es', 'soy', 'eres', 'están'],
+    xpReward: 15,
+  },
+  {
+    id: 8,
+    type: 'translation',
+    question: 'Translate: "Good morning"',
+    choices: [
+      { id: 'a', text: 'Buenas noches', isCorrect: false },
+      { id: 'b', text: 'Buenos días', isCorrect: true },
+      { id: 'c', text: 'Buenas tardes', isCorrect: false },
+      { id: 'd', text: 'Buen viaje', isCorrect: false },
+    ],
+    xpReward: 15,
+  },
+];
